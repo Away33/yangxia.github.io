@@ -1,51 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简介</title>
+    <title>我的个人画展</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        section {
+            padding: 2rem;
+        }
+        ul {
+            list-style: none;
             padding: 0;
         }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
+        li {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
             text-align: center;
-            color: #333;
         }
-
-        .profile {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile h2 {
-            margin-top: 0;
-        }
-
-        .profile p {
-            margin-bottom: 0;
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>个人简介</h1>
-        <div class="profile">
-            <h2>个人简介</h2>
-            <p>这里是您的简介内容。</p>
-        </div>
-    </div>
+    <header>
+        <h1>欢迎来到我的个人画展</h1>
+        <nav>
+            <a href="#home">首页</a>
+            <a href="#gallery">作品展示</a>
+            <a href="#contact">联系我</a>
+        </nav>
+    </header>
+    <section id="gallery">
+        <h2>我的作品</h2>
+        <ul>
+            <li>
+                <img src="作品1.jpg" alt="作品1">
+                <p>作品1描述</p>
+            </li>
+            <li>
+                <img src="作品2.jpg" alt="作品2">
+                <p>作品2描述</p>
+            </li>
+            <li>
+                <img src="作品3.jpg" alt="作品3">
+                <p>作品3描述</p>
+            </li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>关于我</h2>
+        <p>这里是您的个人见解和介绍。</p>
+    </section>
+    <footer>
+        <p>版权所有 &copy; 2022 我的名字</p>
+    </footer>
 </body>
 </html>
